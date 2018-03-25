@@ -8,7 +8,7 @@
         i++;
         if (i <= text.length)
             document.querySelector(".text-print").innerHTML = text.substr(0, i);
-        else if (i > text.length)
+        else if (i > text.length && i < text.length + 2)
             showText();
 
         setTimeout(typeText, 90);
@@ -22,5 +22,7 @@
         textPrintSec.innerHTML = textTwo;
 
     };
+
+
 
 })();
